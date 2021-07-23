@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthdate Palindrome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  rel = "stylesheet" href="main.css">
+</head>
+<body id="body" >
+    <div class="container">
+    <nav class="navbar">
+      <a href="https://github.com/tiwarikratika">Github</a> ||
+      <a href="https://kratika-portfolio.netlify.app/">Portfolio</a> ||
+      <a href="https://www.instagram.com/tiwarikratika">Instagram</a>
+    </nav>
+
+    <div class="row">
+        <div class="col1">
+            <h1>Check out if your <strong>Birthdate </strong>is <strong>Palindrome</strong></h1>
+            <p class="text">Wondering what a palindrome is?
+                <br>
+                A palindrome is a word/number which reads the same forward and backward. For example: 112211.
+            </p>
+            <a href="#sec-2">Let's find out</a>
+
+        </div>
+        <div class="col2">
+            <img class="image" src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FsZW5kYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+        </div>
+    </div>
+    </div>
+    <div id="sec-2">
+        <h2 class="heading-2">Enter your birthdate and we <br> will tell you if your birthdate <br>is a palindrome</h2>
+
+        <p class="about">This app checks your birthdate in 4 formats yyyy-mm-dd,<br>dd-mm-yyyy,mm-dd-yyyy, m-dd-yyyyy
+            <br>
+            <br>
+            e.g. if your birthdate is 01 Aug 1995, then app will check for 19950801,01081995,080195, 108195.
+            </p>
+        <input type="date" label="date" class="date">
+
+        <br>
+
+        <button class="btn">Check</button>
+
+        <div class="output"></div>
+        <img id="img" src='#' style="display:none">
+
+    </div>
+
+   </div>
+   <footer>
+       Made with love using Vanilla JS
+   </footer>
+
+   
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
