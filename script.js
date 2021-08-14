@@ -2,6 +2,12 @@ var birthDate = document.querySelector(".date");
 var btn = document.querySelector(".btn");
 var output = document.querySelector(".output");
 
+var happy = document.querySelector(".img-1");
+var sad = document.querySelector(".img-2");
+
+happy.style.display = "none";
+sad.style.display="none";
+
 let count=0;
 function clickHandler(event) {
     event.preventDefault();
@@ -21,13 +27,13 @@ function clickHandler(event) {
     console.log(mmddyy);
     if((checkPalindrome(yyyymmdd)) || (checkPalindrome(ddmmyyyy) )|| ((checkPalindrome(mmddyy) )))
      {
-    addGif1();
-     output.innerText = "Wow, Congratulations !! Your borthdate is a palindrome !!";
+    addimg1();
+     output.innerText = "Wow, Congratulations !! Your birthdate is a palindrome !!";
     
      }
      else{
-        addGif2();
-    output.innerText="Sorry !! :( ";
+        addimg2();
+    output.innerText="Sorry !! Not a palindrome :( ";
    
      }
 
@@ -62,22 +68,14 @@ var styles = {
     "margin-left":"33%"
 };
 
-// function getnextdate(date){
-//     var day = date.day+1;
-// }
 
-function addGif1() {
-    var img = new Image();
-    img.src="https://media.tenor.com/images/3ba2d4b0c94e33d8238994412d21dd2a/tenor.gif" ;
-    var obj = document.getElementById('body').appendChild(img);
-    Object.assign(obj.style,styles);
-    }
+
+function addimg1() {
+    happy.style.display = "block";
+}
    
-function addGif2(){
-        var img = new Image();
-        img.src="https://media2.giphy.com/media/BEob5qwFkSJ7G/giphy.gif" ;
-        var obj = document.getElementById('body').appendChild(img);
-    Object.assign(obj.style,styles);
+function addimg2(){
+    sad.style.display = "block";
     }
     
     
