@@ -10,11 +10,15 @@ function clickHandler(event) {
     const fulldate = dateInput.split("-");
   
     const year = fulldate[0];
+    console.log(year)
     const month = fulldate[1];
     const date = fulldate[2];
     const yyyymmdd = parseInt(year + month + date);
+    console.log(yyyymmdd);
     const ddmmyyyy = parseInt(date + month + year);
+    console.log(ddmmyyyy);
     const mmddyy = parseInt(month + date + year);
+    console.log(mmddyy);
     if((checkPalindrome(yyyymmdd)) || (checkPalindrome(ddmmyyyy) )|| ((checkPalindrome(mmddyy) )))
      {
     addGif1();
@@ -58,6 +62,10 @@ var styles = {
     "margin-left":"33%"
 };
 
+// function getnextdate(date){
+//     var day = date.day+1;
+// }
+
 function addGif1() {
     var img = new Image();
     img.src="https://media.tenor.com/images/3ba2d4b0c94e33d8238994412d21dd2a/tenor.gif" ;
@@ -77,4 +85,3 @@ function addGif2(){
 
 
 btn.addEventListener("click", clickHandler);
-// btn.addEventListener("click", addGif);

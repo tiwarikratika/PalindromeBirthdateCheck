@@ -85,13 +85,7 @@ strong{
     float: right;
 
 }
-footer{
-    background-color:var(--primary-color) ;
-    height: 50px;
-    text-align: center;
-    color: white;
-    padding-top: 1%;
-}
+
 #sec-2{
     background-color: #E5E7EB;
     height: 550px;
